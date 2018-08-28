@@ -1,11 +1,11 @@
 /*******   Media queries   *******/
 @media all and (max-width: 768px) 
 {
-	#portfolio
-	{
-       		display: flex;
-       		flex-direction: column;
-	}
+    #portfolio
+    {
+       	display: flex;
+       	flex-direction: column;
+    }
 }
 /*******   le portfolio   *******/
 .tabs 
