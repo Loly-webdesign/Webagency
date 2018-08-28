@@ -1,0 +1,216 @@
+/*******   Définition des polices personnalisées   *******/
+@font-face
+{
+    font-family: 'FontAwesome';
+        src: url('../fonts/fontawesome-webfont.eot');
+        src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/fontawesome-webfont.woff') format('woff'),
+            url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../polices/fontawesome-webfont.ttf') format('truetype'),
+            url('../fonts/fontawesome-webfont.otf') format('otf'),
+            url('../fonts/fontawesome-webfont.svg#Fontawesome') format('svg');
+}
+@font-face
+{
+    font-family: 'Glyphicons';
+        src: url('../fonts/glyphicons-halflings-regular.eot');
+        src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+             url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+             url('../fonts/glyphicons-halflings-regular.svg#Glyphicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Roboto';
+        src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Roboto Bold';
+        src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*******   Eléments principaux de la page   *******/
+body
+{
+    font-family: 'Roboto', 'FontAwesome', 'Glyphicons', 'Open Sans', serif;
+}
+i 
+{
+	color: #5CADD3;
+}
+/*******   HEADER / MENU   *******/
+header
+{
+    background-color: white;
+}
+.navigation_menu_header 
+{
+    background-color: #5CADD3;
+}
+.navigation_hamburger_icon 
+{
+    background-color: #5CADD3;
+}
+.navigation_menu_link
+{
+	color: whitesmoke;
+}
+@media screen and (min-width: 769px) 
+{
+    .navigation_menu_header 
+    {
+		background-color: white;    
+	}
+    .navigation_menu_link:hover 
+    {
+		border-top: 3px solid #5CADD3;
+	}
+    .navigation_menu_link  
+    {
+		color: black;
+        border-top: 3px solid transparent;
+	}
+}
+/*******   SLIDER   *******/
+#slogan
+{
+    color: white;
+}
+#slogan strong
+{
+    color: #5CADD3;
+}
+#bouton_bleu
+{
+    background-color: #5CADD3;
+	color: white;
+}
+#bouton_bleu:hover
+{
+    background-color: #4ba4ce;
+	border-bottom: solid 2px #3088b0;
+}
+/*******   decoration sous le titre principal   *******/
+.ligne
+{
+  background-color: #ccc;
+
+}
+.point
+{
+    background-color: #5CADD3;
+    border: 5px solid white;
+}
+/*******   SERVICE   *******/
+.service .service_icon i:first-child 
+{
+	color: #5CADD3;
+	border: solid #D7D7D7 1px;
+}
+.service .service_icon i.fa-circle 
+{
+	color: #5CADD3;
+	background-color: white;
+	border: solid white 2px;
+}
+/*******   PROJETS   *******/
+#projets, #contact
+{
+    background-color: #f5f5f5;    
+}
+/*******   PORTFOLIO   *******/
+.tab label 
+{
+	background: #E5E5E5;
+}
+.tab label:hover 
+{
+	cursor: pointer;
+}
+.tab label:active 
+{
+	background: #4494BB;
+}
+.tab label i 
+{
+	color: #468CAD;
+}
+/* cache le bouton pour les label ("All Works", "Creative", etc...) */
+.tab .content 
+{
+	background-color: #F5F5F5;
+}
+/* style du label quand on clic dessus */
+input[type=radio]:checked ~ label 
+{
+	background-color: #5CADD3;
+	color: white;
+	border-bottom: solid 3px #468CAD;
+}
+input[type=radio]:not(:checked) ~ label 
+{
+	border-bottom: solid 3px #E5E5E5;
+}
+/* legende des images */
+.project_description 
+{
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+.eye_icon i 
+{
+	background-color: transparent;
+    color: white;
+}
+.project_description i 
+{
+	background: #5CADD2;
+	border: solid white 2px;
+}
+.project_description h4,
+.project_description p 
+{
+	color: white;
+}
+/*******   CONTACT   *******/
+#contact #map_overlay 
+{
+  background-color: rgba(91, 172, 210, 0.2);
+}
+#contact_infos 
+{
+	background: rgba(250, 250, 250, .8);
+}
+.underline 
+{
+	border-bottom: 1px dotted #000;
+}
+#contact_infos p 
+{
+    color: dimgrey;
+}
+#contact input[type=submit] 
+{
+	background-color: #5CADD3;
+	color: white;
+	border-bottom: solid 2px #3088b0;
+}
+#contact input[type=submit]:hover 
+{
+	background-color: #4ba4ce;
+	border-bottom: solid 2px #3088b0;
+}
+/*******   FOOTER   *******/
+footer
+{
+	background-color: #5CADD3;
+}
+#credit
+{
+    color: whitesmoke;
+}
