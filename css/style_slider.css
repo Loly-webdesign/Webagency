@@ -19,7 +19,7 @@
     }
 	#slideshow .commands
 	{
-		display: none;
+	    display: none;
 	}
 } 
 @media all and (max-width: 1199px)
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-	padding: 8%;
+    padding: 8%;
     z-index: 1;
     flex-wrap: wrap;
 }
@@ -60,13 +60,13 @@ h1
     text-align: center;
     width: 90px;
     padding: 1%;
-	box-shadow: none;
-	border: none;
-	border-radius: 2px;
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
+    box-shadow: none;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.15s ease-out;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
 }
 #bouton_bleu:hover
 {
@@ -83,7 +83,7 @@ h1
 }
 @media screen and (min-width: 769px) 
 {
-	#slideshow 
+    #slideshow 
     {
         padding-top: 70px;  
     }
@@ -103,15 +103,15 @@ h1
     padding: 0;
     text-align: left;
     /*CSS3 transition*/
-    -webkit-transition: all 1s;
+        -webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-o-transition: all 1s;
-	transition: all 1s;
+    transition: all 1s;
     /*Appel de l'animation*/
 	-webkit-animation: slider 32s infinite;
 	-moz-animation: slider 32s infinite;
-    -o-animation: slider 32s infinite;
-	animation: slider 32s infinite;   
+        -o-animation: slider 32s infinite;
+    animation: slider 32s infinite;   
 }
     @-webkit-keyframes slider 
     {
@@ -132,18 +132,18 @@ h1
 #timeline 
 {
     position: absolute;
-	background: #999;
+    background: #999;
     padding: 0;
     margin:0;
     bottom:0;
-	height: 0.7%;
-	background: rgb(92,173,211);
-	background: rgba(92,173,211,0.8);
+    height: 0.7%;
+    background: rgb(92,173,211);
+    background: rgba(92,173,211,0.8);
 	/*Appel de l'animation*/
 	-webkit-animation: timeliner 32s infinite;
 	-moz-animation: timeliner 32s infinite;
-    -o-animation: timeliner 32s infinite;
-	animation: timeliner 32s infinite;
+        -o-animation: timeliner 32s infinite;
+    animation: timeliner 32s infinite;
 }
     @-webkit-keyframes timeliner 
     {
