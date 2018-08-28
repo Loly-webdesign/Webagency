@@ -7,7 +7,7 @@ body
 h3 
 {
     margin: 0;
-	text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 2em;
     text-align: center;
     padding: 70px 0 3% 0;
@@ -26,9 +26,9 @@ a,img
 /*******   PARTIES   *******/
 .flex 
 {
-	display: flex;
+    display: flex;
     display: -webkit-flex;
-	justify-content: space-around;
+    justify-content: space-around;
 	 	-webkit-justify-content: space-around;
 }
 .ligne
@@ -56,10 +56,10 @@ a,img
 #projets .intro 
 {
     padding: 4%;
-	max-width: 60%;
+    max-width: 60%;
     font-size: 1.3em;
-	margin: auto;
-	text-align: center;
+    margin: auto;
+    text-align: center;
 }
 /*******    SERVICES   *******/
 #services > div.flex 
@@ -94,7 +94,7 @@ h2
 }
 .service p 
 {
-	max-width: 450px;
+    max-width: 450px;
     line-height: 2em;
     font-size: 1em;
     margin: 0;
@@ -102,8 +102,8 @@ h2
 }
 .service .service_icon 
 {
-	position: relative;
-	margin-right: 4.5%;
+    position: relative;
+    margin-right: 4.5%;
     align-self: baseline;
 }
 .service .service_icon i:first-child /*cible un élément qui est le premier élément fils par rapport à son élément parent.*/
