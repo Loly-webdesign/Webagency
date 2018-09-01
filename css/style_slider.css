@@ -1,162 +1,204 @@
 /*******   Media queries   *******/
-@media all and (max-width: 768px)
-{
-    #slogan
-    {
-        top: 12%;
-        font-size: 0.4em;
-        width: 31%;
-        margin: auto;
-    }  
-    #slogan h1
-    {
-        font-size: 1.4em;
-        padding-bottom: 2%;
-    }
-    #slogan p
-    {
-        display: none;
-    }
-	#slideshow .commands
-	{
-	    display: none;
-	}
-} 
-@media all and (max-width: 1199px)
-{
-    #slogan
-    {
-        width: 45%;
-        font-size: 0.8em;
-    }   
-} 
+@media all and (max-width: 768px) {
+  #slogan {
+    top: 12%;
+    font-size: 0.4em;
+    width: 31%;
+    margin: auto;
+  }
+  #slogan h1 {
+    font-size: 1.4em;
+    padding-bottom: 2%;
+  }
+  #slogan p {
+    display: none;
+  }
+  #slideshow .commands {
+    display: none;
+  }
+}
+@media all and (max-width: 1199px) {
+  #slogan {
+    width: 45%;
+    font-size: 0.8em;
+  }
+}
 /******* Slogan   *******/
-#slogan
-{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 8%;
-    z-index: 1;
-    flex-wrap: wrap;
+#slogan {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 8%;
+  z-index: 1;
+  flex-wrap: wrap;
 }
-h1
-{
-    font-size: 2em;
-    letter-spacing: 0.03em;
-    line-height: 1.4em;
-    margin: 0;
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.03em;
+  line-height: 1.4em;
+  margin: 0;
 }
-#slogan p
-{
-    line-height: 1.5em;
-    margin: 0;
-    padding: 2% 0;
-    font-size: 1.3em;
+#slogan p {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 2% 0;
+  font-size: 1.3em;
 }
-#bouton_bleu
-{
-    align-self: flex-start; 
-    text-align: center;
-    width: 90px;
-    padding: 1%;
-    box-shadow: none;
-    border: none;
-    border-radius: 2px;
-    transition: all 0.15s ease-out;
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
+#bouton_bleu {
+  align-self: flex-start;
+  text-align: center;
+  width: 90px;
+  padding: 1%;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-#bouton_bleu:hover
-{
-    cursor: pointer;
+#bouton_bleu:hover {
+  cursor: pointer;
 }
 /*******   le slider   *******/
-#slideshow 
-{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 50px;  
-    margin: 0;
+#slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 50px;
+  margin: 0;
 }
-@media screen and (min-width: 769px) 
-{
-    #slideshow 
-    {
-        padding-top: 70px;  
-    }
-} 
+@media screen and (min-width: 769px) {
+  #slideshow {
+    padding-top: 70px;
+  }
+}
 /*******   Slider anime en responsive   *******/
-#slider figure img
-{
-    width: 50%; /* width / nb d'element */
-    height: auto;
-    float: left; /*corrige un bug de win safari 5*/
+#slider figure img {
+  width: 50%; /* width / nb d'element */
+  height: auto;
+  float: left; /*corrige un bug de win safari 5*/
 }
-#slider figure
-{
-    position: relative;
-    width: 200%; /*elements x100*/
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    /*CSS3 transition*/
-        -webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-o-transition: all 1s;
-    transition: all 1s;
-    /*Appel de l'animation*/
-	-webkit-animation: slider 32s infinite;
-	-moz-animation: slider 32s infinite;
-        -o-animation: slider 32s infinite;
-    animation: slider 32s infinite;   
+#slider figure {
+  position: relative;
+  width: 200%; /*elements x100*/
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  /*CSS3 transition*/
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  /*Appel de l'animation*/
+  -webkit-animation: slider 32s infinite;
+  -moz-animation: slider 32s infinite;
+  -o-animation: slider 32s infinite;
+  animation: slider 32s infinite;
 }
-    @-webkit-keyframes slider 
-    {
-        0%, 20%, 50%, 70%, 100%	{ left: 0 }
-        25%, 45%, 75%, 95%		{ left: -100% }
-    }
-    @-moz-keyframes slider 
-    {
-        0%, 20%, 50%, 70%, 100%	{ left: 0 }
-        25%, 45%, 75%, 95%		{ left: -100% }
-    }
-    @keyframes slider 
-    {
-        0%, 20%, 50%, 70%, 100%	{ left: 0 }
-        25%, 45%, 75%, 95%		{ left: -100% }
+@-webkit-keyframes slider {
+  0%,
+  20%,
+  50%,
+  70%,
+  100% {
+    left: 0;
+  }
+  25%,
+  45%,
+  75%,
+  95% {
+    left: -100%;
+  }
+}
+@-moz-keyframes slider {
+  0%,
+  20%,
+  50%,
+  70%,
+  100% {
+    left: 0;
+  }
+  25%,
+  45%,
+  75%,
+  95% {
+    left: -100%;
+  }
+}
+@keyframes slider {
+  0%,
+  20%,
+  50%,
+  70%,
+  100% {
+    left: 0;
+  }
+  25%,
+  45%,
+  75%,
+  95% {
+    left: -100%;
+  }
 }
 /*******   la barre de timer   *******/
-#timeline 
-{
-    position: absolute;
-    background: #999;
-    padding: 0;
-    margin:0;
-    bottom:0;
-    height: 0.7%;
-    background: rgb(92,173,211);
-    background: rgba(92,173,211,0.8);
-	/*Appel de l'animation*/
-	-webkit-animation: timeliner 32s infinite;
-	-moz-animation: timeliner 32s infinite;
-        -o-animation: timeliner 32s infinite;
-    animation: timeliner 32s infinite;
+#timeline {
+  position: absolute;
+  background: #999;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  height: 0.7%;
+  background: rgb(92, 173, 211);
+  background: rgba(92, 173, 211, 0.8);
+  /*Appel de l'animation*/
+  -webkit-animation: timeliner 32s infinite;
+  -moz-animation: timeliner 32s infinite;
+  -o-animation: timeliner 32s infinite;
+  animation: timeliner 32s infinite;
 }
-    @-webkit-keyframes timeliner 
-    {
-        0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-        20%, 45%, 70%, 90%		{ width: 100%;	}
-    }
-    @-moz-keyframes timeliner 
-    {
-        0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-        20%, 45%, 70%, 90%		{ width: 100%;	}
-    }
-    @keyframes timeliner 
-    {
-        0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-        20%, 45%, 70%, 90%		{ width: 100%;	}
-    }
+@-webkit-keyframes timeliner {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    width: 0;
+  }
+  20%,
+  45%,
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+@-moz-keyframes timeliner {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    width: 0;
+  }
+  20%,
+  45%,
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+@keyframes timeliner {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    width: 0;
+  }
+  20%,
+  45%,
+  70%,
+  90% {
+    width: 100%;
+  }
+}
