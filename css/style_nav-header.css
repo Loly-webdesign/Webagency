@@ -1,203 +1,171 @@
 /********************   HEADER   *****************/
-header 
-{
-	z-index: 50;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 70px;
+header {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
 }
-.header_container 
-{
-	width: 80%;
-	height: 100%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.header_container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul 
-{
-        font-size: 1.2em;
-	margin: 0;
-	padding: 0;
+header ul {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
 }
-header li 
-{
-	list-style: none;
+header li {
+  list-style: none;
 }
 /*******   Media queries   *******/
-@media screen and (max-width: 768px) 
-{
-    header 
-    {
-	height: 50px;
-    }
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
 }
 /**********************   LOGO   *******************/
-.logo_desktop 
-{
-    display: none;
+.logo_desktop {
+  display: none;
 }
 /*******   Media queries   *******/
-@media screen and (min-width: 769px) 
-{
-    .logo_desktop 
-    {
-		display: block;
-    }
-    .logo_mobile 
-    {
-		display: none;
-    }
-} 
+@media screen and (min-width: 769px) {
+  .logo_desktop {
+    display: block;
+  }
+  .logo_mobile {
+    display: none;
+  }
+}
 /********************   NAVIGATION   ****************/
 /* Navigation header */
-.navigation_menu_header 
-{
-	position: fixed;
-	width: 100%;
-    	height: 50px;
-	right: -100%;
-	top: 50px;
-	display: flex;
+.navigation_menu_header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  right: -100%;
+  top: 50px;
+  display: flex;
 }
-.navigation_menu_item_header 
-{
-	width: 25%;
-	height: 100%;
-	text-align: center;    
+.navigation_menu_item_header {
+  width: 25%;
+  height: 100%;
+  text-align: center;
 }
-.navigation_menu_link 
-{
-	display: block;
-    
-}  
-.navigation_menu_link:hover 
-{
-    	font-weight: bold;
+.navigation_menu_link {
+  display: block;
+}
+.navigation_menu_link:hover {
+  font-weight: bold;
 }
 /* Navigation hamburger */
-.navigation_hamburger
-{
-    	position: relative;
+.navigation_hamburger {
+  position: relative;
 }
-.navigation_hamburger_control 
-{
-    	margin: 0;
-    	display: block;
-    	width: 100%;
-    	height: 100%;
-    	top: 0;
-    	left: 0;
-    	position: absolute;
-    	cursor: pointer;
-    	opacity: 0;
-    	z-index: 2;
+.navigation_hamburger_control {
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
 }
 /*les icônes du menu burger*/
-.navigation_hamburger_icon 
-{
-	display: block;
-	width: 35px;
-	height: 5px;
-	margin: 5px 0;
-	border-radius: 3px;
-	z-index: 1;
+.navigation_hamburger_icon {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 3px;
+  z-index: 1;
 
-		-webkit-transform-origin: 4px 0px;
-		-ms-transform-origin: 4px 0px;
-	transform-origin: 4px 0px;
-    
-     		-webkit-transition: background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.2s ease,
-         	-webkit-transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
+  -webkit-transform-origin: 4px 0px;
+  -ms-transform-origin: 4px 0px;
+  transform-origin: 4px 0px;
 
-    		-o-transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.2s ease;
+  -webkit-transition: background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.2s ease, -webkit-transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
 
-    	transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.2s ease,
-                -webkit-transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
+  -o-transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease;
 
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease,
+    -webkit-transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 /*Pour l'icône croix du menu burger*/
-.navigation_hamburger_icon:first-child
-{
-		-webkit-transform-origin: 0% 0%;
-		-ms-transform-origin: 0% 0%;
-	transform-origin: 0% 0%;
+.navigation_hamburger_icon:first-child {
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
-.navigation_hamburger_icon:last-child 
-{
-		-webkit-transform-origin: 0% 100%;
-		-ms-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
+.navigation_hamburger_icon:last-child {
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
-.navigation_input 
-{
-	display: none;
+.navigation_input {
+  display: none;
 }
-.navigation_input:checked ~ .navigation_hamburger > .navigation_hamburger_icon 
-{
-	opacity: 1;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+.navigation_input:checked ~ .navigation_hamburger > .navigation_hamburger_icon {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-.navigation_input:checked ~ .navigation_hamburger > .navigation_hamburger_icon:nth-last-child(2) 
-{
-	opacity: 0;
-		-webkit-transform: rotate(0deg) scale(0.2, 0.2);
-		-ms-transform: rotate(0deg) scale(0.2, 0.2);
-	transform: rotate(0deg) scale(0.2, 0.2);
+.navigation_input:checked
+  ~ .navigation_hamburger
+  > .navigation_hamburger_icon:nth-last-child(2) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+  -ms-transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 /*transformation de l'icone du menu burger*/
-.navigation_input:checked ~ .navigation_hamburger > .navigation_hamburger_icon:last-child 
-{
-	opacity: 1;
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+.navigation_input:checked
+  ~ .navigation_hamburger
+  > .navigation_hamburger_icon:last-child {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 /*ouverture du menu en mode burger*/
-.navigation_input:checked ~ .navigation_menu_header 
-{
-		-webkit-transform: translateX(-100%);
-		-ms-transform: translateX(-100%);
-	transform: translateX(-100%);
+.navigation_input:checked ~ .navigation_menu_header {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 /*   Media queries   */
-@media (max-width: 768px) 
-{
-    .navigation_menu_header 
-    {
-        padding: 1.5% 0 1.5% 0;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  .navigation_menu_header {
+    padding: 1.5% 0 1.5% 0;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-@media screen and (min-width: 769px) 
-{
-    .navigation_hamburger 
-    {
-	display: none;
-    }
-    .navigation_menu_header 
-    {
-	position: static;
-	width: 425px;
-	height: 70px;
-    }
-    .navigation_menu_item 
-    {
-	height: 70px;
-    }
-    .navigation_menu_link 
-    {
-	line-height: 70px;
-    }
+@media screen and (min-width: 769px) {
+  .navigation_hamburger {
+    display: none;
+  }
+  .navigation_menu_header {
+    position: static;
+    width: 425px;
+    height: 70px;
+  }
+  .navigation_menu_item {
+    height: 70px;
+  }
+  .navigation_menu_link {
+    line-height: 70px;
+  }
 }
